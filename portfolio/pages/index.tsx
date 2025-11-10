@@ -4,7 +4,7 @@ import Link from "next/link"
 const HomePage = () => {
 
   return(
-  <div className="min-h-screen flex flex-col items-center justify-center text-center px-4">
+  <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 mt-5">
     <img 
     src="/PortfolioPic.jpg" 
     alt="Profile picture" 
@@ -23,7 +23,7 @@ const HomePage = () => {
       I believe great digital experiences shouldn’t just look good — they should make life easier, more enjoyable, and more accessible for users everywhere.</p>
 
         <div className="mt-6 flex flex-col md:flex-row gap-3 opacity-0 animate-fadeInUp [animation-delay:600ms]">
-          <Link href="/Projects" className="text-white bg-blue-500 hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-md shadow-md">
+          <Link href="/About" className="text-white bg-blue-500 hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-md shadow-md">
           View My Work
           </Link>
 

@@ -28,7 +28,7 @@ const Contact: React.FC = () =>{
                 <p className="mb-5 ">Or through:</p>
 
                  <a href="https://www.linkedin.com/in/misan-toghanro" target="_blank" className="hover:text-blue-600 transition flex items-center gap-2" >
-                    Linkedin <FaLinkedin />
+                  <FaLinkedin /> Linkedin 
                 </a> 
             </div>
 
@@ -78,7 +78,7 @@ const Contact: React.FC = () =>{
                     Send Message
                   </button>
 
-                  <input type="hidden" name="_next" value="https://your-portfolio.vercel.app/thankyou" />
+                  <input type="hidden" name="_next" value="https://misandev.vercel.app/thankyou" />
 
             </form>
             

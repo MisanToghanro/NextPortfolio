@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link rel="icon" href="/logo.jpg" />
+
       <body className="antialiased">
         <Main />
         <NextScript />

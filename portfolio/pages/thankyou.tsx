@@ -8,7 +8,7 @@ const ThankYou = () => (
     <p className="text-lg text-gray-700">
       Your message has been sent successfully. I’ll get back to you soon!
     </p>
-    <Link href="/">retun to HomePage</Link>
+    <Link href="/"  >retun to HomePage</Link>
   </div>
 );
 
