@@ -30,6 +30,8 @@ const HomePage = () => {
           <Link href="/Contact" className="text-white bg-blue-500 hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-md shadow-md">
           Contact Me
           </Link>
+
+          <Link href="https://drive.google.com/file/d/1c7Xh-oiX1xr8hFaH3lOce09-PR9UhooH/view?usp=sharing" target="blank" className="text-white bg-blue-500 hover:bg-blue-600 hover:scale-105 px-6 py-2 rounded-md shadow-md">📄 My Resume</Link>
         </div>
 
 

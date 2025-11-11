@@ -20,8 +20,8 @@ const ProjectCards: React.FC<ProjectCard> = ({projects}) => {
                         <h3 className="font-semibold text-lg mb-2 text-gray-800">{project.title}</h3>
                         <p className="text-md mb-3 text-left text-gray-600">{project.description}</p>
 
-                        <div className="flex mt-3 gap-4 justify-center text-center items-center text-md">
-                       <Link href={`/ProjectsDetails/${project.id}`} className="text-blue-500 font-medium hover:underline"> View Project Details</Link>
+                        <div className="flex mt-3 gap-4 justify-center text-center items-center text-sm">
+                       <Link href={`/ProjectsDetails/${project.id}`} className="text-blue-500 font-medium hover:underline "> View Project Details </Link>
 
                         <Link 
                         href={project.link}
