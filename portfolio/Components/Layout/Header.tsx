@@ -16,6 +16,7 @@ const Header: React.FC = () => {
         <Link href="/" className="hover:text-blue-500">Home</Link>
         <Link href="/About" className="hover:text-blue-500">About</Link>
         <Link href="/Contact" className="hover:text-blue-500">Contact</Link>
+        <Link href="/Blog" className="hover:text-blue-500">Blog</Link>
       </nav>
 
       {/* Mobile Navigation */}
@@ -52,6 +53,7 @@ const Header: React.FC = () => {
          <Link href="/" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>Home</Link>
           <Link href="/About" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>About</Link>
           <Link href="/Contact" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>Contact</Link>
+          <Link href="/Blog" className="hover:text-blue-500">Blog</Link>
         </nav>
       )}
 
