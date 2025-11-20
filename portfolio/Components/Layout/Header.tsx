@@ -6,21 +6,33 @@ const Header: React.FC = () => {
     const [menu,setMenu] = useState(false);
 
   return (
-    <header className="w-full flex justify-between items-center py-4 px-6 shadow-md ">
-      <div className="text-2xl font-bold text-gray-900 ">
-        Misan Toghanro
-      </div>
+    <header className="w-full sticky top-0 z-50 backdrop-blur-md bg-white/70">
 
       {/* Desktop Navigation */}
+      <div className=" hidden md:flex justify-between p-6 shadow-md">
+      <h2 className="text-2xl font-bold text-gray-900 ">
+        Misan Toghanro
+      </h2>
+
+      {/* Desktop Navigation Links*/}
       <nav className="space-x-6 hidden md:flex">
         <Link href="/" className="hover:text-blue-500">Home</Link>
         <Link href="/About" className="hover:text-blue-500">About</Link>
         <Link href="/Contact" className="hover:text-blue-500">Contact</Link>
         <Link href="/Blog" className="hover:text-blue-500">Blog</Link>
       </nav>
+      </div>
 
-      {/* Mobile Navigation */}
-      <div className="md:hidden">
+
+       {/* Mobile Navigation */}
+      <div className="md:hidden flex flex-col">
+
+      <div className="flex justify-between p-4 shadow">
+        
+      <h2 className="text-2xl font-bold text-gray-900 ">
+        Misan Toghanro
+      </h2>
+
         <button
         onClick={() => setMenu(!menu)}
         >
@@ -47,16 +59,20 @@ const Header: React.FC = () => {
           </svg>
         </button>
       </div>
-
-    {menu && (
-        <nav className="md:hidden absolute top-1/6  left-0 w-full bg-white flex flex-col items-center py-4 shadow-md">
-         <Link href="/" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>Home</Link>
-          <Link href="/About" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>About</Link>
-          <Link href="/Contact" className="py-2 hover:text-blue-500" onClick={() => setMenu(false)}>Contact</Link>
-          <Link href="/Blog" className="hover:text-blue-500">Blog</Link>
+            {/* Mobile Navigation Links*/}
+        <div className="md:hidden shadow-md ">
+             {menu && (
+        <nav className="flex flex-col space-y-3 p-4 animate-slideDown">
+         <Link href="/" className="py-2 hover:text-blue-500 border-b" onClick={() => setMenu(false)}>Home</Link>
+          <Link href="/About" className="py-2 hover:text-blue-500 border-b" onClick={() => setMenu(false)}>About</Link>
+          <Link href="/Contact" className="py-2 hover:text-blue-500 border-b" onClick={() => setMenu(false)}>Contact</Link>
+          <Link href="/Blog" className="hover:text-blue-500 ">Blog</Link>
         </nav>
       )}
+      </div>
 
+
+      </div>
 
     </header>
   )

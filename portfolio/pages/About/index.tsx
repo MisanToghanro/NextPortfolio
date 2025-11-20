@@ -8,7 +8,7 @@ import { projects } from "../api/projects";
 const AboutPage: React.FC = () => {
 
     return(
-        <div className="flex flex-col items-center text-center px-6 py-12 max-w-4xl mx-auto space-y-10">
+        <div className="min-h-screen flex flex-col items-center text-center px-6 py-12 max-w-4xl mx-auto space-y-10">
 
           <section className="max-w-2xl text-left space-y-2">
             <div >
@@ -36,18 +36,56 @@ const AboutPage: React.FC = () => {
             
 
           {/*tech stack*/}
-            <section className="mt-10 text-center">
-         <h2 className="text-2xl font-semibold mb-5">Tech Stack</h2>
-           <div className="flex flex-wrap justify-center gap-6 text-gray-700 text-lg">
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><FaHtml5 /> HTML</span>
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><FaCss3Alt /> CSS</span>
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><FaJs /> JavaScript</span>
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><FaReact /> React</span>
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><SiNextdotjs /> Next.js</span>
-  <span className="flex items-center gap-2 px-3 py-1 border rounded-full hover:bg-blue-100 transition cursor-pointer"><SiTailwindcss /> Tailwind CSS</span>
-         </div>
+          <section className="mt-10 text-center">
+  <h2 className="text-2xl font-semibold mb-5">My TechStack</h2>
 
-         </section>
+  <div className="grid grid-cols-1 md:grid-cols-2  gap-6 max-w-3xl mx-auto text-gray-700 text-lg">
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <FaHtml5 /> <span className="font-semibold">HTML</span>
+      </div>
+      <p className="text-sm text-gray-500">The foundation of every webpage — I use it to structure content clearly and semantically.</p>
+    </div>
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <FaCss3Alt /> <span className="font-semibold">CSS</span>
+      </div>
+      <p className="text-sm text-gray-500">Used to style layouts, create responsive designs, and bring UI ideas to life.</p>
+    </div>
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <FaJs /> <span className="font-semibold">JavaScript</span>
+      </div>
+      <p className="text-sm text-gray-500">Adds logic, interactivity, and dynamic behavior to the web apps I build.</p>
+    </div>
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <FaReact /> <span className="font-semibold">React</span>
+      </div>
+      <p className="text-sm text-gray-500">My main UI library for building powerful, component-based applications.</p>
+    </div>
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <SiNextdotjs /> <span className="font-semibold">Next.js</span>
+      </div>
+      <p className="text-sm text-gray-500">A React framework I use to build fast, optimized, and SEO-friendly web apps.</p>
+    </div>
+
+    <div className="px-4 py-3 border rounded-xl hover:bg-blue-100 transition">
+      <div className="flex items-center gap-2 mb-1">
+        <SiTailwindcss /> <span className="font-semibold">Tailwind CSS</span>
+      </div>
+      <p className="text-sm text-gray-500">My go-to styling tool for building clean, responsive designs quickly.</p>
+    </div>
+
+  </div>
+</section>
+
 
 
          {/*Projects*/}
