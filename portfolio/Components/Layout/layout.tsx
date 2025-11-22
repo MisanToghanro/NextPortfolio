@@ -16,6 +16,7 @@ const Layout: React.FC<LayoutProps> = ({children, title}) => {
       <Head>
         <title>{title ?? "Misan Toghanro – Frontend Developer"}</title>
         <meta name="description" content="Frontend Developer Portfolio" />
+        <link rel="icon" href="/logo.png" />
       </Head>
             <Header/>
             <main className="grow">
