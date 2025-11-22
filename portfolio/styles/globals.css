@@ -1,5 +1,111 @@
 @import "tailwindcss";
 
+/* Dark mode */
+html.dark body {
+  background-color: #1f2937; /* dark background */
+  color: #f9fafb; /* light text */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links */
+html.dark a {
+  color: white; /* light blue accent */
+  transition: color 0.3s;
+}
+
+html.dark a:hover {
+  color: #5648b7; /* hover accent */
+}
+
+/* Header */
+html.dark header {
+  background-color: rgba(86, 72, 183, 0.7); /* slightly transparent purple */
+  color: #f9fafb;
+}
+
+html.dark header h2 span {
+  color: #41C9B9;
+}
+
+html.dark header nav a {
+  color: #f9fafb;
+}
+
+html.dark header nav a:hover {
+  color: #41C9B9;
+}
+
+/* Footer */
+html.dark footer {
+  background-color: #5648b7;
+  color: #f9fafb;
+}
+
+html.dark footer a:hover {
+  color: #41C9B9;
+}
+
+html.dark .home-page p {
+color: #d1d5db;
+}
+
+html.dark .view-work-btn:hover{
+color: white;
+}
+
+html.dark .service-page p {
+  color: #d1d5db;
+}
+ html.dark .service-page a{
+  color: #41C9B9;
+ }
+
+  html.dark .service-page a:hover{
+  color: #5648b7;
+ }
+
+html.dark .service-page .certificate-p{
+  color: #5648b7;
+}
+
+html.dark .service-page .certificate-link{
+  color: #41C9B9;
+}
+
+html.dark .project-desc h3{
+   color: #f3f4f6;
+}
+
+html.dark .service p{
+  color:#1f2937;
+}
+
+html.dark .contact-container p{
+  color: #f3f4f6;
+}
+html.dark .contact-container a {
+  color:#5648b7;
+}
+html.dark .contact-container a:hover {
+  color:#41C9B9;
+}
+
+html.dark .contact-container form {
+  color: #1f2937;
+}
+
+html.dark .contact-info-card p{
+  color: #1f2937;
+}
+
+html.dark .blog p {
+  color: #1f2937;
+}
+
+
+
+
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;

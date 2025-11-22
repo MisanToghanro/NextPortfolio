@@ -14,8 +14,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({project}) => {
       <img
         src={project.image}
         alt={project.title}
-        className="w-full h-72 object-cover rounded-lg mb-6 shadow-md"
-      />
+        className="w-full h-72 object-cover rounded-lg mb-6 shadow-md"/>
       <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
       <p className=" mb-6">
         {project.description}
@@ -24,16 +23,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({project}) => {
       {project.details && (
         <div
           className="text-left space-y-3"
-          dangerouslySetInnerHTML={{ __html: project.details }}
-        />
+          dangerouslySetInnerHTML={{ __html: project.details }}/>
       )}
 
       <a
         href={project.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block mt-8 bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition-all"
-      >
+        className="inline-block mt-8 bg-[#5648B7] text-white px-5 py-2 rounded-lg hover:bg-[#453aa2] transition-all">
         View Project Live
       </a>
     </main>

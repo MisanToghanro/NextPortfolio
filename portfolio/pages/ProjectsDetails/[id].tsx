@@ -19,8 +19,8 @@ const DetailsPage = () => {
     }
     return(
         <div className="min-h-screen">
-            <h1 className="text-center font-bold p-6 text-2xl">Project details</h1>
-            <Link href={`/About`} className="text-md shadow-md shadow-blue-400 rounded-md px-4 py-2 m-4 hover:scale-105"> go back</Link>
+            <h1 className="text-center font-bold p-6 text-2xl text-[#5648B7]">Project details</h1>
+            <Link href={`/Services`} className="font-medium text-md shadow-md shadow-[#9bf0e6] rounded-md px-4 py-2 m-4 hover:scale-105"> go back</Link>
             <ProjectDetails project={project}/>
         </div>
     )

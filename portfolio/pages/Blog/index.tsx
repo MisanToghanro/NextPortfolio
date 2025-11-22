@@ -24,8 +24,12 @@ const BlogPage = () => {
   }, [submitted]);
 
   return (
-    <div className="min-h-screen px-6 py-12 max-w-3xl mx-auto text-gray-800">
-      <h1 className="text-3xl font-bold mb-6">Improve Your Website in 7 Steps</h1>
+    <div className="min-h-screen px-6 py-12 max-w-3xl mx-auto text-gray-800 ">
+
+        <p className="text-xl md:text-2xl bg-[#5648B7] text-[#36a89c] p-6 rounded-lg max-w-2xl mx-auto text-center ">No Posts Avialable yet</p>
+
+        <div className="hidden">
+    <h1 className="text-3xl font-bold mb-6">Improve Your Website in 7 Steps</h1>
       <p className="mb-6 text-gray-600">
         This guide covers quick, actionable steps to make your site more engaging, professional, and user-friendly.
       </p>
@@ -69,9 +73,11 @@ const BlogPage = () => {
           </form>
         )}
       </div>
+        </div>
+
+
     </div>
   );
 };
 
 export default BlogPage;
-
