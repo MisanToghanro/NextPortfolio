@@ -96,7 +96,7 @@ return (
 
       <button
         type="submit"
-        className="bg-[#5648B7] text-white font-medium px-6 py-2 rounded-md hover:bg-[#4637a5] transition w-full"
+        className="bg-[#5648B7] text-white font-medium px-6 py-2 rounded-md hover:bg-[#4637a5] transition w-full cursor-pointer"
       >
         Send Message
       </button>

@@ -2,6 +2,7 @@ import React from "react"
 import Footer from "./footer"
 import Header from "./Header"
 import Head from "next/head"
+import ErrorBoundary from "./ErrorBoundary"
 
 interface LayoutProps{
     children: React.ReactNode
@@ -20,7 +21,9 @@ const Layout: React.FC<LayoutProps> = ({children, title}) => {
       </Head>
             <Header/>
             <main className="grow">
-             {children}
+                <ErrorBoundary>
+                    {children}
+                </ErrorBoundary>
             </main>
             <Footer/>
         </div>

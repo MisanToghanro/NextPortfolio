@@ -67,16 +67,16 @@ const Header: React.FC = () => {
     {/* Mobile Menu */}
     {menu && (
       <nav className="flex flex-col space-y-3 px-5 py-4 bg-[#5648B7] text-gray-100 animate-slideDown shadow-lg">
-        <Link href="/" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]">
+        <Link href="/" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Home
         </Link>
-        <Link href="/Services" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]">
+        <Link href="/Services" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Skills & Services
         </Link>
-        <Link href="/Contact" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]">
+        <Link href="/Contact" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Contact
         </Link>
-        <Link href="/Blog" className="py-2 hover:text-[#41C9B9]">
+        <Link href="/Blog" className="py-2 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Blog
         </Link>
       </nav>

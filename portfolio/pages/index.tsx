@@ -28,7 +28,7 @@ const HomePage = () => {
           If you're a founder or small business owner, I can help you improve your online presence.
         </p>
 
-        {/* Connect Button (Primary Color) */}
+        
         <Link
           href="/Contact"
           className="text-white bg-[#41C9B9] hover:bg-[#36a89c] hover:scale-105 px-6 py-2 rounded-md shadow-md transition"
@@ -38,19 +38,19 @@ const HomePage = () => {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 opacity-0 animate-fadeInUp [animation-delay:600ms]">
 
-          {/* View My Work (Secondary Color Outline) */}
+          
           <Link
             href="/Services"
-            className="border border-[#5648B7] text-[#5648B7] px-6 py-2 rounded-md hover:bg-[#5648B7] hover:text-white transition view-work-btn"
+            className="border border-[#5648B7] text-[#5648B7] px-6 py-2 rounded-md hover:bg-[#5648B7] hover:text-white transition home-btn"
           >
             View My Work
           </Link>
 
-          {/* Resume (Neutral button) */}
+          
           <Link
             href="https://drive.google.com/file/d/1QurSm5JfXjNRetZPewsM_zWGw70JJTMe/view?usp=sharing"
             target="blank"
-            className="border border-gray-400 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-100 transition"
+            className="border border-gray-400 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-100 transition home-btn"
           >
             📄 My Resume
           </Link>

@@ -8,14 +8,7 @@ html.dark body {
 }
 
 /* Links */
-html.dark a {
-  color: white; /* light blue accent */
-  transition: color 0.3s;
-}
 
-html.dark a:hover {
-  color: #5648b7; /* hover accent */
-}
 
 /* Header */
 html.dark header {
@@ -49,8 +42,8 @@ html.dark .home-page p {
 color: #d1d5db;
 }
 
-html.dark .view-work-btn:hover {
-color: white;
+html.dark .home-btn  {
+color: #41C9B9;
 }
 
 html.dark .service-page p {
@@ -60,9 +53,6 @@ html.dark .service-page p {
   color: #41C9B9;
  }
 
-  html.dark .service-page a:hover{
-  color: #5648b7;
- }
 
 html.dark .service-page .certificate-p{
   color: #5648b7;
