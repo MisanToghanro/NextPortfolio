@@ -6,6 +6,7 @@ description:string,
 image:string,
 link:string,
 tags:string[],
+ type: "personal" | "client";
 details: string;
 }
 

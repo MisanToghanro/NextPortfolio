@@ -7,9 +7,6 @@ interface ProjectCard {
 const ProjectCards: React.FC<ProjectCard> = ({ projects }) => {
   return (
     <section className="mt-10 text-center w-full">
-      <h2 className="font-semibold mb-10 text-xl md:text-3xl text-[#5648B7]">
-        Featured Projects
-      </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project) => (
@@ -33,7 +30,7 @@ const ProjectCards: React.FC<ProjectCard> = ({ projects }) => {
                 {project.title}
               </h3>
 
-              <p className="text-gray-600 text-md mt-2 mb-4 ">
+              <p className="text-gray-500 text-md mt-2 mb-4 ">
                 {project.description}
               </p>
 

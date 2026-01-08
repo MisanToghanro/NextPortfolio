@@ -8,6 +8,7 @@ export const projects:ProjectsCardsProps[] = [
  {
     id: 0,
     title: "Job Harbor Application",
+    type: "personal",
     description:
       "An interactive job board platform that connects talent with opportunities using Next.js and Tailwind CSS.",
     image: "/jobharbor.png",
@@ -80,6 +81,7 @@ export const projects:ProjectsCardsProps[] = [
   {
     id: 1,
     title: "Where in the World",
+    type: "personal",
     description:
       "A Next.js + TypeScript app using the REST Countries API to display countries and their details.",
     image: "/whereintheworldapp.png",
@@ -114,6 +116,7 @@ export const projects:ProjectsCardsProps[] = [
   {
     id: 2,
     title: "Dictionary Web App",
+    type: "personal",
     description:
       "A React app using the Dictionary API to search for words and view detailed results.",
     image: "/dictionaryapp.png",
@@ -141,6 +144,7 @@ export const projects:ProjectsCardsProps[] = [
   {
     id: 3,
     title: "Weather App",
+    type: "personal",
     description:
       "A weather app that allows users to search for current weather conditions in various cities.",
     image: "/weatherapp.png",
@@ -164,6 +168,46 @@ export const projects:ProjectsCardsProps[] = [
       <h3 class="text-lg font-semibold mt-4">📡 API Integration</h3>
       <p>
         Utilizes a public weather API to fetch up-to-date weather data based on user input.
+      </p>
+    `,
+  },
+    {
+    id: 4,
+    title: "Wizzy Graphics Portfolio",
+    type: "client",
+    description:
+      "A professional portfolio website for Wizzy’s Graphics, a creative studio specializing in branding and visual identity design.",
+    image: "/wizzygraphics.png",
+    link: "https://wizzygraphics.vercel.app",
+    tags: ["Client Project", "Branding", "Portfolio"],
+    details: `
+      <h2 class="text-xl font-semibold mb-2">🎨 Wizzy’s Graphics</h2>
+      <p>
+        Wizzy’s Graphics is a creative studio led by Matthew Wisdom Efe, a Visual Identity Designer based in Warri, Nigeria.
+        The brand focuses on clarity, consistency, and purpose in visual communication.
+      </p>
+
+      <h3 class="text-lg font-semibold mt-4">🧠 Project Overview</h3>
+      <p>
+        This project involved designing and presenting Wizzy’s services through a clean, professional portfolio website
+        that reflects the studio’s design philosophy.
+      </p>
+
+      <h3 class="text-lg font-semibold mt-4">🛠️ Services Highlighted</h3>
+      <ul class="list-disc ml-5 space-y-1">
+        <li><strong>Visual Identity Design</strong> – Complete brand systems.</li>
+        <li><strong>Logo Design</strong> – Research-driven, strategic logos.</li>
+        <li><strong>Brand Strategy & Concept Development</strong></li>
+        <li><strong>Brand Guidelines</strong> – Usage consistency.</li>
+        <li><strong>Marketing & Promotional Design</strong></li>
+        <li><strong>Social Media Design</strong></li>
+        <li><strong>Print Design</strong> – Business cards, brochures, letterheads.</li>
+      </ul>
+
+      <h3 class="text-lg font-semibold mt-4">🎯 Outcome</h3>
+      <p>
+        A polished, client-focused portfolio that clearly communicates services, strengthens brand identity,
+        and positions Wizzy’s Graphics as a professional creative studio.
       </p>
     `,
   },

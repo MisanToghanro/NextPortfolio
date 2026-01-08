@@ -1,9 +1,8 @@
 
 import Link from "next/link";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import ProjectCards from "@/Components/Projects/ProjectCards";
-import { projects } from "../api/projects";
+import ProjectTypeCards from "@/Components/Projects/ProjectTypeCards";
+import TechStackCard from "@/Components/TechStack/TechStackCard";
+import { techStack } from "@/data/techstack";
 
 const ServicesPage: React.FC = () => {
 
@@ -121,60 +120,24 @@ const ServicesPage: React.FC = () => {
           {/*tech stack*/}
           <section className="mt-10 text-center tech-stack">
   <h2 className="text-3xl font-bold mb-6 text-[#5648B7]">Core Technologies</h2>
+  <p className="text-gray-700 mb-6 text-lg">
+    These are the technologies I work with to build modern, efficient, and scalable web applications.
+  </p>
 
-  <p className="text-gray-700 mb-6 text-lg">These are the technologies I work with to build modern, efficient, and scalable web applications. </p>
-
-  <div className="grid grid-cols-1 md:grid-cols-2  gap-6 max-w-3xl mx-auto text-gray-700 text-lg">
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <FaHtml5 /> <span className="font-semibold ">HTML</span>
-      </div>
-      <p className="text-sm text-gray-600">The foundation of every webpage — I use it to structure content clearly and semantically.</p>
-    </div>
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <FaCss3Alt /> <span className="font-semibold">CSS</span>
-      </div>
-      <p className="text-sm text-gray-600">Used to style layouts, create responsive designs, and bring UI ideas to life.</p>
-    </div>
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <FaJs /> <span className="font-semibold">JavaScript</span>
-      </div>
-      <p className="text-sm text-gray-600">Adds logic, interactivity, and dynamic behavior to the web apps I build.</p>
-    </div>
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <FaReact /> <span className="font-semibold">React</span>
-      </div>
-      <p className="text-sm text-gray-600">My main UI library for building powerful, component-based applications.</p>
-    </div>
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <SiNextdotjs /> <span className="font-semibold">Next.js</span>
-      </div>
-      <p className="text-sm text-gray-600">A React framework I use to build fast, optimized, and SEO-friendly web apps.</p>
-    </div>
-
-    <div className="p-6 cursor-pointer  shadow-md shadow-[#9bf0e6] rounded-xl hover:scale-105 transition">
-      <div className="flex items-center gap-2 mb-2 text-[#5648B7]">
-        <SiTailwindcss /> <span className="font-semibold">Tailwind CSS</span>
-      </div>
-      <p className="text-sm text-gray-600">My go-to styling tool for building clean, responsive designs quickly.</p>
-    </div>
-
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto text-left">
+    {techStack.map((tech, index) => (
+      <TechStackCard key={index} techStack={tech} />
+    ))}
   </div>
 </section>
+
+      
 
 
 
          {/*Projects*/}
-          <ProjectCards projects={projects}/>
+          {/*<ProjectCards projects={projects}/>*/}
+          <ProjectTypeCards/>
 
          <section className="mt-16 text-left max-w-2xl rounded-lg shadow-md p-6 shadow-[#7ee2d7]" >
           <h2 className="text-2xl font-semibold mb-4 text-[#5648B7]">My Approach to Projects</h2>
