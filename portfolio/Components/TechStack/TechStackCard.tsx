@@ -3,11 +3,11 @@ import React from "react";
 interface TechStackCardProps {
   name: string;
   description: string;
-  icon: React.ElementType; // Icon component
+  icon: React.ElementType; 
   color?: string; 
 }
 
-// Wrapper props for the component
+
 interface TechStackCards {
   techStack: TechStackCardProps;
 }

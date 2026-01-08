@@ -131,10 +131,7 @@ const ServicesPage: React.FC = () => {
   </div>
 </section>
 
-      
-
-
-
+  
          {/*Projects*/}
           {/*<ProjectCards projects={projects}/>*/}
           <ProjectTypeCards/>
