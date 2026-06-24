@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({children, title}) => {
         <link rel="icon" href="/Logo.png" />
       </Head>
             <Header/>
-            <main className="grow">
+            <main className="grow pt-28">
                 <ErrorBoundary>
                     {children}
                 </ErrorBoundary>

@@ -112,73 +112,14 @@ export const projects:ProjectsCardsProps[] = [
       </ul>
     `,
   },
-
-  {
-    id: 2,
-    title: "Dictionary Web App",
-    type: "personal",
-    description:
-      "A React app using the Dictionary API to search for words and view detailed results.",
-    image: "/dictionaryapp.png",
-    link: "https://dictionary-app-wine-mu.vercel.app/",
-    tags: ["React", "API Integration"],
-    details: `
-      <h2 class="text-xl font-semibold mb-2">📖 Dictionary App</h2>
-      <p>
-        A React-based web application that allows users to search for word definitions using the Free Dictionary API.
-      </p>
-
-      <h3 class="text-lg font-semibold mt-4">🔧 Features</h3>
-      <ul class="list-disc ml-5 space-y-1">
-        <li>🔍 <strong>Search for Words:</strong> Lookup definitions and details for any word.</li>
-        <li>📘 <strong>API Integration:</strong> Displays results returned by the Free Dictionary API.</li>
-        <li>⚠️ <strong>Form Validation:</strong> Prevents submission of empty input fields.</li>
-        <li>🔊 <strong>Audio Playback:</strong> Play pronunciation audio when available.</li>
-        <li>🌗 <strong>Theme Toggle:</strong> Switch between light and dark themes.</li>
-        <li>📱 <strong>Responsive Layout:</strong> Optimized for mobile, tablet, and desktop.</li>
-        <li>🖱️ <strong>Accessible Interactions:</strong> Includes hover and focus states for usability.</li>
-      </ul>
-    `,
-  },
-
-  {
-    id: 3,
-    title: "Weather App",
-    type: "personal",
-    description:
-      "A weather app that allows users to search for current weather conditions in various cities.",
-    image: "/weatherapp.png",
-    link: "https://open-weather-app-lovat.vercel.app/",
-    tags: ["React", "API Integration"],
-    details: `
-      <h2 class="text-xl font-semibold mb-2">🌤️ Weather App</h2>
-      <p>
-        The Weather App allows users to search for current weather conditions in various cities using a public weather API.
-      </p>
-
-      <h3 class="text-lg font-semibold mt-4">🔍 Features</h3>
-      <ul class="list-disc ml-5 space-y-1">
-        <li><strong>Search by City:</strong> Get real-time weather information.</li>
-        <li><strong>🌡️ Temperature:</strong> Displays temperature in Celsius or Fahrenheit.</li>
-        <li><strong>💧 Humidity:</strong> Shows humidity percentage.</li>
-        <li><strong>💨 Wind Speed:</strong> Displays wind speed in km/h or mph.</li>
-        <li><strong>🌦️ Weather Condition Icon:</strong> Visual icons for weather types.</li>
-      </ul>
-
-      <h3 class="text-lg font-semibold mt-4">📡 API Integration</h3>
-      <p>
-        Utilizes a public weather API to fetch up-to-date weather data based on user input.
-      </p>
-    `,
-  },
     {
-    id: 4,
+    id: 2,
     title: "Wizzy Graphics Portfolio",
     type: "client",
     description:
       "A professional portfolio website for Wizzy’s Graphics, a creative studio specializing in branding and visual identity design.",
     image: "/wizzygraphics.png",
-    link: "https://wizzygraphics.vercel.app",
+    link: "https://wize-creation.vercel.app/",
     tags: ["Client Project", "Branding", "Portfolio"],
     details: `
       <h2 class="text-xl font-semibold mb-2">🎨 Wizzy’s Graphics</h2>
@@ -211,6 +152,115 @@ export const projects:ProjectsCardsProps[] = [
       </p>
     `,
   },
+  {
+  id: 3,
+  title: "Space Tourism Website",
+  type: "personal",
+  description:
+    "A multi-page responsive space tourism website built with HTML, CSS, and JavaScript, using dynamic content rendering from a local JSON file.",
+  image: "/spacetourism.png",
+  link: "https://space-tourism-multi-page-website-theta.vercel.app/",
+  tags: ["HTML", "CSS", "JavaScript", "JSON", "Responsive Design"],
+  details: `
+    <h2 class="text-xl font-semibold mb-2">🚀 Space Tourism Website</h2>
+
+    <p>
+      A Frontend Mentor challenge focused on building a fully responsive multi-page space tourism website.
+      The project simulates a real-world production workflow using semantic HTML, modular CSS, and vanilla JavaScript.
+    </p>
+
+    <h3 class="text-lg font-semibold mt-4">🌍 Overview</h3>
+    <p>
+      Users can navigate between Home, Destination, Crew, and Technology pages, each dynamically populated
+      using a local <code>data.json</code> file instead of multiple static HTML pages.
+    </p>
+
+    <h3 class="text-lg font-semibold mt-4">⚙️ Key Features</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>Responsive design across mobile, tablet, and desktop</li>
+      <li>Dynamic content rendering using JavaScript and JSON</li>
+      <li>Interactive navigation with tab-based switching</li>
+      <li>Mobile-friendly hamburger menu with toggle animation</li>
+      <li>Reusable UI structure across all pages</li>
+    </ul>
+
+    <h3 class="text-lg font-semibold mt-4">🧠 What I Learned</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>Working with fetch API and local JSON data</li>
+      <li>Dynamic DOM updates based on user interaction</li>
+      <li>Improved responsive layout strategy (mobile-first workflow)</li>
+      <li>Better project architecture by replacing multiple HTML pages with a data-driven approach</li>
+    </ul>
+
+    <h3 class="text-lg font-semibold mt-4">🛠️ Technologies Used</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>HTML5</li>
+      <li>CSS3 (Flexbox, Media Queries)</li>
+      <li>Vanilla JavaScript</li>
+      <li>JSON data handling</li>
+    </ul>
+  `,
+},
+{
+  id: 4,
+  title: "Product List with Cart",
+  type: "personal",
+  description:
+    "A fully interactive ecommerce-style product list built with React and Tailwind CSS, featuring cart management, quantity controls, and order confirmation modal.",
+  image: "/productlistcart.png",
+  link: "https://product-list-with-cart-lovat-chi.vercel.app/",
+  tags: ["React", "Tailwind CSS", "State Management", "Frontend Mentor"],
+
+  details: `
+    <h2 class="text-xl font-semibold mb-2">🛒 Product List with Cart</h2>
+
+    <p>
+      A Frontend Mentor challenge rebuilt using React and Tailwind CSS, focusing on real-world ecommerce cart interactions.
+      Users can add products to a cart, adjust quantities, remove items, and complete an order through a confirmation modal.
+    </p>
+
+    <h3 class="text-lg font-semibold mt-4">🌍 Overview</h3>
+    <p>
+      This project demonstrates a complete frontend cart system, including dynamic state updates,
+      conditional rendering, and responsive UI design.
+    </p>
+
+    <h3 class="text-lg font-semibold mt-4">⚙️ Key Features</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>Add products to cart dynamically</li>
+      <li>Increase and decrease item quantities</li>
+      <li>Remove items from cart</li>
+      <li>Live cart total calculation using reduce()</li>
+      <li>Order confirmation modal with full summary</li>
+      <li>Reset cart after order completion</li>
+      <li>Responsive design across all devices</li>
+    </ul>
+
+    <h3 class="text-lg font-semibold mt-4">🧠 What I Learned</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>Advanced React state management patterns</li>
+      <li>Working with arrays (map, filter, reduce, find)</li>
+      <li>Conditional rendering for UI states</li>
+      <li>Component composition and reusable UI logic</li>
+      <li>Building modal dialogs and overlay UX patterns</li>
+      <li>Improved accessibility awareness (ARIA roles, button labels)</li>
+    </ul>
+
+    <h3 class="text-lg font-semibold mt-4">🛠️ Technologies Used</h3>
+    <ul class="list-disc ml-5 space-y-1">
+      <li>React (Hooks: useState)</li>
+      <li>Tailwind CSS</li>
+      <li>JavaScript (ES6+)</li>
+      <li>Frontend Mentor API-free data handling</li>
+    </ul>
+
+    <h3 class="text-lg font-semibold mt-4">🎯 Outcome</h3>
+    <p>
+      A fully functional ecommerce-style frontend application demonstrating strong understanding of React fundamentals,
+      UI state management, and modern frontend architecture.
+    </p>
+  `,
+}
 ];
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.status(200).json(projects);
