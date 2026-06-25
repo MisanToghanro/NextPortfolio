@@ -1,64 +1,73 @@
-import Link from "next/link"
-
+import Link from "next/link";
 
 const HomePage = () => {
-
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 mt-5 gap-10 home-page">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center px-6"
+    >
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
 
-      <img
-        src="/PortfolioPic.jpg"
-        alt="Profile picture"
-        className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg shadow-[#41C9B9] opacity-0 animate-fadeInUp"
-      />
+        {/* Small Badge */}
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#41C9B9]/30 bg-[#41C9B9]/10 px-5 py-2 text-sm font-medium text-[#41C9B9] shadow-[0_0_30px_rgba(65,201,185,0.15)]">
+          <span className="h-2 w-2 rounded-full bg-[#41C9B9] animate-pulse"></span>
+            Learn • Build • Deploy
+          </span>
 
-      <div className="flex flex-col space-y-6 items-center md:items-start max-w-xl">
-
-        <h1 className="text-4xl font-bold mb-2 opacity-0 animate-fadeInUp [animation-delay:200ms] text-[#5648B7]">
-          Hello there 👋
+        {/* Main Heading */}
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#5648B7]">
+          Building
+          <br />
+          <span className="text-[#41C9B9]">
+            Modern Web Experiences
+          </span>
         </h1>
 
-        <h2 className="text-2xl mb-4 font-semibold text-[#41C9B9]">
-          I'm Misan
-        </h2>
-
-        <p className="max-w-xl opacity-0 animate-fadeInUp [animation-delay:400ms] mb-3 text-gray-700 text-center md:text-left">
-          A Frontend Developer focused on building clean, modern websites with React, Next.js, and Tailwind.
-          I learn, build, and share my journey one project at a time.
-          If you're a founder or small business owner, I can help you improve your online presence.
+        {/* Description */}
+        <p className="mt-8 max-w-2xl text-lg md:text-xl leading-8 text-gray-600">
+          Frontend Developer specializing in{" "}
+          <span className="font-semibold text-[#5648B7]">
+            React, Next.js, TypeScript
+          </span>{" "}
+          and{" "}
+          <span className="font-semibold text-[#5648B7]">
+            Tailwind CSS
+          </span>
+          .
+          <br />
+          I build fast, responsive and accessible web applications that help
+          businesses create meaningful digital experiences.
         </p>
 
-        
-        <Link
-          href="/Contact"
-          className="text-white bg-[#41C9B9] hover:bg-[#36a89c] hover:scale-105 px-6 py-2 rounded-md shadow-md transition"
-        >
-          Let's Connect
-        </Link>
+        {/* CTA Buttons */}
+        <div className="mt-12 flex flex-col sm:flex-row gap-4">
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 opacity-0 animate-fadeInUp [animation-delay:600ms]">
-
-          
           <Link
-            href="/Services"
-            className="border border-[#5648B7] text-[#5648B7] px-6 py-2 rounded-md hover:bg-[#5648B7] hover:text-white transition home-btn"
+            href="#services"
+            className="rounded-full bg-[#5648B7] px-8 py-4 text-white font-medium transition hover:scale-105 hover:bg-[#473aa3]"
           >
             View My Work
           </Link>
 
-          
           <Link
-            href="https://drive.google.com/file/d/1QurSm5JfXjNRetZPewsM_zWGw70JJTMe/view?usp=sharing"
-            target="blank"
-            className="border border-gray-400 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-100 transition home-btn"
+            href="#contact"
+            className="rounded-full border border-[#5648B7] px-8 py-4 font-medium text-[#5648B7] transition hover:bg-[#5648B7] hover:text-white"
           >
-            📄 My Resume
+            Let's Connect
           </Link>
 
         </div>
 
-      </div>
+        {/* Resume Link */}
+        <Link
+          href="https://drive.google.com/file/d/1QurSm5JfXjNRetZPewsM_zWGw70JJTMe/view?usp=sharing"
+          target="_blank"
+          className="mt-8 text-gray-500 hover:text-[#41C9B9] transition"
+        >
+          📄 View Resume
+        </Link>
 
+      </div>
     </section>
   );
 };

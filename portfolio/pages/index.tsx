@@ -1,30 +1,37 @@
 import HomePage from "./Hero"
 import ServicesPage from "./Services"
 import Contact from "./Contact"
-import WorkPage from "./Work"
 import AboutPage from "./About"
+import Link from "next/link"
+
 
 const indexPage = () => {
 
 return(
   <main>
-    <HomePage/>
 
-    <section>
+    <section id="home"> 
+        <HomePage/>
+    </section>
+
+  
+    <section id="about">
       <AboutPage/>
     </section>
 
 
-    <section>
+    <section id="services">
       <ServicesPage/>
     </section>
 
-   <section>
-     <WorkPage/>
-
+    <section className="mt-5 text-center">
+          <p className=" mb-4">Interested in collaborating or hiring me for your next project?</p>
+         <Link href="/Contact"  className="bg-[#5648B7] text-white px-6 py-2 rounded-lg hover:bg-[#453aa2] transition service-contact">
+         Let’s Work Together
+          </Link>
    </section>
 
-   <section>
+   <section id="contact">
     <Contact/>
    </section>
   </main>

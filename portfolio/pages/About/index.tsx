@@ -3,7 +3,7 @@ import Link from "next/link";
 const AboutPage = () => {
 
     return (
-             <section className="max-w-2xl text-left space-y-2">
+             <section className="min-h-screen flex flex-col items-center text-center px-6 py-12 max-w-4xl mx-auto space-y-10 service-page">
             <div>
           <p className="  text-gray-600 intro">
            Through hands-on experience at <strong>ALX Africa’s Frontend Development</strong> and the 
