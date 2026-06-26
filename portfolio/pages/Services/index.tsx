@@ -103,12 +103,6 @@ const ServicesPage: React.FC = () => {
 
         <ProjectTypeCards/>
 
-
-
-
-            
-
-
         </div>
     )
 }

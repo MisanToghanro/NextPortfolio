@@ -9,35 +9,32 @@ const HomePage = () => {
       <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
 
         {/* Small Badge */}
-        <span className="inline-flex items-center gap-2 rounded-full border border-[#41C9B9]/30 bg-[#41C9B9]/10 px-5 py-2 text-sm font-medium text-[#41C9B9] shadow-[0_0_30px_rgba(65,201,185,0.15)]">
+        <span className="inline-flex items-center gap-2 rounded-full border border-[#41C9B9]/30 bg-[#41C9B9]/10 px-5 py-2 text-sm font-medium text-[#41C9B9] shadow-[0_0_30px_rgba(65,201,185,0.15)] mb-4">
           <span className="h-2 w-2 rounded-full bg-[#41C9B9] animate-pulse"></span>
-            Learn • Build • Deploy
+            Frontend Developer
           </span>
 
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight text-[#5648B7]">
-          Building
-          <br />
+        <h1 className="text-4xl md:text-7xl font-bold leading-tight text-[#5648B7]">
+          Learn,
           <span className="text-[#41C9B9]">
-            Modern Web Experiences
+            Build
           </span>
+          & Deploy
         </h1>
 
         {/* Description */}
-        <p className="mt-8 max-w-2xl text-lg md:text-xl leading-8 text-gray-600">
-          Frontend Developer specializing in{" "}
-          <span className="font-semibold text-[#5648B7]">
-            React, Next.js, TypeScript
-          </span>{" "}
-          and{" "}
-          <span className="font-semibold text-[#5648B7]">
-            Tailwind CSS
-          </span>
-          .
-          <br />
-          I build fast, responsive and accessible web applications that help
-          businesses create meaningful digital experiences.
-        </p>
+         <p className="mt-8 max-w-2xl text-lg md:text-xl leading-8 text-gray-500 ">
+  I build modern, responsive web applications with{" "}
+  <span className="font-semibold text-[#5648B7]">
+    React, Next.js, TypeScript
+  </span>{" "}
+  and{" "}
+  <span className="font-semibold text-[#5648B7]">
+    Tailwind CSS
+  </span>
+  . Continuously learning and transforming ideas into intuitive digital experiences through clean code and thoughtful design.
+</p>
 
         {/* CTA Buttons */}
         <div className="mt-12 flex flex-col sm:flex-row gap-4">
@@ -57,15 +54,6 @@ const HomePage = () => {
           </Link>
 
         </div>
-
-        {/* Resume Link */}
-        <Link
-          href="https://drive.google.com/file/d/1QurSm5JfXjNRetZPewsM_zWGw70JJTMe/view?usp=sharing"
-          target="_blank"
-          className="mt-8 text-gray-500 hover:text-[#41C9B9] transition"
-        >
-          📄 View Resume
-        </Link>
 
       </div>
     </section>

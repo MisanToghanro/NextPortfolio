@@ -21,10 +21,10 @@ const Header: React.FC = () => {
 
     {/* Desktop Nav Links */}
    <nav className="flex items-center gap-8 text-white font-medium">
-      <Link href="#home" className="hover:text-[#41C9B9] transition">Home</Link>
-      <Link href="#about" className="hover:text-[#41C9B9] transition">About Me</Link>
-      <Link href="#services" className="hover:text-[#41C9B9] transition">Skills & Services</Link>
-      <Link href="#contact" className="hover:text-[#41C9B9] transition">Connect</Link>
+      <Link href="/#home" className="hover:text-[#41C9B9] transition">Home</Link>
+      <Link href="/#about" className="hover:text-[#41C9B9] transition">About Me</Link>
+      <Link href="/#services" className="hover:text-[#41C9B9] transition">Skills & Services</Link>
+      <Link href="/#contact" className="hover:text-[#41C9B9] transition">Connect</Link>
     </nav>
 
     <DarkMode/>
@@ -69,16 +69,16 @@ const Header: React.FC = () => {
     {/* Mobile Menu */}
     {menu && (
       <nav className="flex flex-col space-y-3 px-5 py-4 bg-white/10 backdrop-blur-xl text-gray-100 animate-slideDown">
-        <Link href="#home" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
+        <Link href="/#home" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Home
         </Link>
-      <Link href="#about" className="py-2 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
+      <Link href="/#about" className="py-2 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           About Me
         </Link>
-        <Link href="#services" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
+        <Link href="/#services" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Skills & Services
         </Link>
-        <Link href="#contact" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
+        <Link href="/#contact" className="py-2 border-b border-[#41C9B9]/30 hover:text-[#41C9B9]" onClick={() => setMenu(false)}>
           Connect
         </Link>
 
