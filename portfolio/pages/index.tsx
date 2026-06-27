@@ -2,6 +2,7 @@ import HomePage from "./Hero"
 import ServicesPage from "./Services"
 import Contact from "./Contact"
 import AboutPage from "./About"
+import Carousel from "@/Components/MotionCarousel"
 
 
 
@@ -12,6 +13,7 @@ return(
 
     <section id="home"> 
         <HomePage/>
+        <Carousel/>
     </section>
 
   

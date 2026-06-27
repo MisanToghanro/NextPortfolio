@@ -1,40 +1,68 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaGithub,
+  FaGitAlt,
+} from "react-icons/fa";
+
+import {
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiVercel,
+} from "react-icons/si";
 
 export const techStack = [
   {
-    name: "HTML",
-    description: "The foundation of every webpage — I use it to structure content clearly and semantically.",
+    name: "HTML5",
     icon: FaHtml5,
     color: "#E34F26",
   },
   {
-    name: "CSS",
-    description: "Used to style layouts, create responsive designs, and bring UI ideas to life.",
+    name: "CSS3",
     icon: FaCss3Alt,
     color: "#1572B6",
   },
   {
     name: "JavaScript",
-    description: "Adds logic, interactivity, and dynamic behavior to the web apps I build.",
     icon: FaJs,
     color: "#F7DF1E",
   },
   {
+    name: "TypeScript",
+    icon: SiTypescript,
+    color: "#3178C6",
+  },
+  {
     name: "React",
-    description: "My main UI library for building powerful, component-based applications.",
     icon: FaReact,
     color: "#61DAFB",
   },
   {
     name: "Next.js",
-    description: "A React framework I use to build fast, optimized, and SEO-friendly web apps.",
     icon: SiNextdotjs,
+    color: "#000000",
   },
   {
     name: "Tailwind CSS",
-    description: "My go-to styling tool for building clean, responsive designs quickly.",
     icon: SiTailwindcss,
-    color: "#38B2AC",
+    color: "#06B6D4",
+  },
+  {
+    name: "Git",
+    icon: FaGitAlt,
+    color: "#F05032",
+  },
+  {
+    name: "GitHub",
+    icon: FaGithub,
+    color: "#181717",
+  },
+  {
+    name: "Vercel",
+    icon: SiVercel,
+    color: "#000000",
   },
 ];
