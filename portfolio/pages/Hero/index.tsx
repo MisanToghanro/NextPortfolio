@@ -65,8 +65,8 @@ const HomePage = () => {
         <motion.div variants={item} className="mt-12 flex flex-col sm:flex-row gap-4">
 
           <MotionLink
-          animate={{x:0, opacity:0.99}}
-          initial={{x:-100, opacity:0}}
+          animate={{x:0, opacity:1}}
+          initial={{x:"-100vw", opacity:0}}
           transition={{type:"spring", stiffness:100, duration:0.1, delay:1}}
             href="#services"
             className="rounded-full bg-[#5648B7] px-8 py-4 text-white font-medium transition hover:scale-105 hover:bg-[#473aa3]"
@@ -75,8 +75,8 @@ const HomePage = () => {
           </MotionLink>
 
           <MotionLink
-          animate={{x:0, opacity:0.99}}
-          initial={{x:100, opacity:0}}
+          animate={{x:0, opacity:1}}
+          initial={{x:"100vw", opacity:0}}
           transition={{type:"spring", stiffness:100, duration:0.1, delay:1}}
             href="#contact"
             className="rounded-full border border-[#5648B7] px-8 py-4 font-medium text-[#5648B7] transition hover:bg-[#5648B7] hover:text-white"

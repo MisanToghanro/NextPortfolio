@@ -8,7 +8,7 @@ const Carousel = () => {
         relative
         overflow-hidden
         py-8
-        rounded-md
+        
         bg-linear-to-r
         from-[#5648B7]/10
         via-[#41C9B9]/5
@@ -51,8 +51,10 @@ const Carousel = () => {
         "
       />
 
+      <div className="flex w-max">
+
       <motion.div
-        className="flex gap-6 whitespace-nowrap"
+        className="flex gap-6 pr-6 w-max whitespace-nowrap"
         animate={{
           x: ["0%", "-50%"],
         }}
@@ -100,6 +102,7 @@ const Carousel = () => {
           );
         })}
       </motion.div>
+      </div>
     </section>
   );
 };
